@@ -1,4 +1,4 @@
-package com.book.file;
+package com.book.arraylist;
 
 public class Book {
 	public String bookName;//书的名字
@@ -34,12 +34,12 @@ public class Book {
 	public void setCount(int count) {
 		this.count = count;
 	}
-	public int getState() {
+	public String getState() {
 		if(state == 0){
-			return 0;   //借出
+			return "未借";
 		}
 		else{
-			return 1;  //未借
+			return "借出";
 		}
 		
 	}
